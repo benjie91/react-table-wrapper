@@ -1,27 +1,17 @@
 {
-  "parser": "babel-eslint",
-  "extends": [
-    "standard",
-    "standard-react"
-  ],
-  "env": {
-    "es6": true
-  },
-  "plugins": [
-    "react"
-  ],
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
   "parserOptions": {
+    "ecmaVersion": 2016,
     "sourceType": "module",
-    "allowImportExportEverywhere": true
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
-  "rules": {
-    // don't force es6 functions to include space before paren
-    "space-before-function-paren": 0,
-
-    // allow specifying true explicitly for boolean props
-    "react/jsx-boolean-value": 0,
-
-    // allow imports mixed with non-import statements at top of file
-    "import/first": 0
+  "env": {
+    "es6": true,
+    "jest": true,
+    "browser": true,
+    "node": true
   }
 }

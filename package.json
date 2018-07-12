@@ -15,9 +15,12 @@
     "start": "rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
-  "dependencies": {},
+  "dependencies": {
+    "prettier": "^1.13.7"
+  },
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
@@ -25,6 +28,7 @@
     "react-table": "^6.8.6"
   },
   "devDependencies": {
+    "@storybook/react": "^3.4.8",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-plugin-external-helpers": "^6.22.0",
@@ -40,7 +44,7 @@
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.0.1",
-    "gh-pages": "^1.1.0",
+    "gh-pages": "^1.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "^1.1.1",
