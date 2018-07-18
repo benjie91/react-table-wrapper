@@ -1,10 +1,14 @@
 # react-table-wrapper
 
-> A wrapper for ReactTable that provide additional functionalities
+> A wrapper that provide functionalities to select and copy cells from a ReactTable.
 
 [![NPM](https://img.shields.io/npm/v/react-table-wrapper.svg)](https://www.npmjs.com/package/react-table-wrapper) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg)](https://github.com/airbnb/javascript)
 
-## Usage
+## Incorporation
+
+### 1. Define Data Source
+
+### 2. Add Table to Page
 
 ```jsx
 import React, { Component } from 'react'
@@ -21,6 +25,8 @@ render () {
   }
 }
 ```
+
+## Usage
 
 ## License
 
