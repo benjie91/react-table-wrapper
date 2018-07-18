@@ -4,7 +4,20 @@
 
 [![NPM](https://img.shields.io/npm/v/react-table-wrapper.svg)](https://www.npmjs.com/package/react-table-wrapper) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg)](https://github.com/airbnb/javascript)
 
-## Incorporation
+## Run Demo
+
+1.  Build the component by typing this in the terminal:
+
+```
+yarn build
+```
+
+2.  Run the example demo by typing this next:
+
+```
+cd example
+yarn start
+```
 
 ### 1. Define Data Source
 
@@ -26,7 +39,11 @@ render () {
 }
 ```
 
-## Usage
+## Cell Selection
+
+### Row and Column Selectors
+
+## Copying Cells
 
 ## License
 
