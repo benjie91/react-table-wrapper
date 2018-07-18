@@ -19,6 +19,8 @@ cd example
 yarn start
 ```
 
+3.  The demo page will load up to `localhost:3000` by default.
+
 ### 1. Define Data Source
 
 ### 2. Add Table to Page
