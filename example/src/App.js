@@ -68,7 +68,7 @@ export default class App extends Component {
           headers={data.headers}
           data={data.rowData}
           pasteStyle="<style>table {border-collapse: collapse;}
-      table, td, th {border: 3px solid pink;}</style>"
+          table, td, th {border: 3px solid pink;}</style>"
         />
       </div>
     );
