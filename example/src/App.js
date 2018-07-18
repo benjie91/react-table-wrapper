@@ -1,29 +1,9 @@
 import React, { Component } from "react";
 
-import ReactTableWrapper from "react-table-wrapper";
+import ReactTableCopyWrapper from "react-table-wrapper";
 import "react-table/react-table.css";
 
 import data from "./data/data.json";
-
-/*         <details>
-          <summary>Click me for details!</summary>
-        </details> */
-
-/* <div style={{ float: "left" }}>
-          <h2>Ways to Select Cells</h2>
-          <p>
-            <ol>
-              <li>Click on Cells</li>
-              <li>Click on row and column checkboxes</li>
-            </ol>
-          </p>
-        </div>
-        <div style={{ float: "right" }}>
-          <h2>Ways to Copy Cells</h2>
-          <p>
-            1. Control-C <br /> 2. Click on table's Copy Selected Cells button
-          </p>
-        </div> */
 
 export default class App extends Component {
   changeSpoilerText(open) {
@@ -38,8 +18,11 @@ export default class App extends Component {
   render() {
     return (
       <div align="center">
-        <h1>ReactTableWrapper</h1>
-        <p>A wrapper that provides additional functionality for ReactTable.</p>
+        <h1>ReactTableCopyWrapper</h1>
+        <p>
+          A wrapper that provide functionalities to select and copy cells from a
+          ReactTable.
+        </p>
         <details id="spoilerHead">
           <summary
             id="spoilerTest"
@@ -67,19 +50,19 @@ export default class App extends Component {
           </div>
         </details>
         <hr />
-        <ReactTableWrapper
+        <ReactTableCopyWrapper
           tableId="Table1"
           title="Table 1"
           headers={data.headers}
           data={data.rowData}
         />
-        <ReactTableWrapper
+        <ReactTableCopyWrapper
           tableId="Table2"
           title="Table 2"
           headers={data.headers}
           data={data.rowData}
         />
-        <ReactTableWrapper
+        <ReactTableCopyWrapper
           tableId="Table3"
           title="Table 3"
           headers={data.headers}

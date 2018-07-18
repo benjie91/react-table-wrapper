@@ -1,5 +1,5 @@
 {
-  "name": "react-table-wrapper-example",
+  "name": "react-table-copy-wrapper-example",
   "homepage": "https://.github.io/react-table-wrapper",
   "version": "0.0.0",
   "private": true,
@@ -10,7 +10,7 @@
     "react-dom": "^16.2.0",
     "react-scripts": "^1.1.1",
     "react-table": "^6.8.6",
-    "react-table-wrapper": "link:.."
+    "react-table-copy-wrapper": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

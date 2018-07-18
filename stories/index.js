@@ -1,11 +1,11 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import ReactTableWrapper from "../src/index";
+import ReactTableCopyWrapper from "../src/index";
 import data from "../example/src/data/data.json";
 
 storiesOf("ReactTableWrapper", module).add("with text", () => (
-  <ReactTableWrapper
+  <ReactTableCopyWrapper
     tableId="Table1"
     title="Table 1"
     headers={data.headers}
@@ -13,7 +13,7 @@ storiesOf("ReactTableWrapper", module).add("with text", () => (
   />
 ));
 
-storiesOf("ReactTableWrapper", module).add("with style", () => (
+storiesOf("ReactTableCopyWrapper", module).add("with style", () => (
   <ReactTableWrapper
     pasteStyle="<style>table {border-collapse: collapse;}
       table, td, th {border: 3px solid pink;}</style>"

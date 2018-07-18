@@ -10,7 +10,7 @@ import addCopyTableListeners from "./copyTable/addCopyTableListeners";
     align: center
   }; */
 
-class ReactTableWrapper extends Component {
+class ReactTableCopyWrapper extends Component {
   constructor(props) {
     super(props);
 
@@ -239,7 +239,7 @@ class ReactTableWrapper extends Component {
   }
 }
 
-ReactTableWrapper.propTypes = {
+ReactTableCopyWrapper.propTypes = {
   tableId: PropTypes.string.isRequired,
   title: PropTypes.string,
   data: PropTypes.array.isRequired,
@@ -247,11 +247,11 @@ ReactTableWrapper.propTypes = {
   pasteStyle: PropTypes.string
 };
 
-ReactTableWrapper.defaultProps = {
+ReactTableCopyWrapper.defaultProps = {
   pasteStyle: `<style>table {border-collapse: collapse;} table, td, th {border: 1px solid black;}</style>`
 };
 
-export default ReactTableWrapper;
+export default ReactTableCopyWrapper;
 
 /*
 ---
