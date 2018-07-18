@@ -6,6 +6,10 @@ import "react-table/react-table.css";
 
 import addCopyTableListeners from "./copyTable/addCopyTableListeners";
 
+/* const centerStyle {
+    align: center
+  }; */
+
 class ReactTableWrapper extends Component {
   constructor(props) {
     super(props);
@@ -174,7 +178,7 @@ class ReactTableWrapper extends Component {
 
   render() {
     return (
-      <div id={this.props.tableId}>
+      <div id={this.props.tableId} align="center">
         <h2>{this.props.title}</h2>
         <button>Copy Selected Cells</button>
         <br />
