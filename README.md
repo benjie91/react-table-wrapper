@@ -19,7 +19,23 @@ cd example
 yarn start
 ```
 
-3.  The demo page will load up to `localhost:3000` by default.
+3.  The demo page will load up to `localhost:3000` by default. You can now play around with the demo.
+
+## Usage
+
+### Selecting Cells
+
+#### Row and Column Selectors
+
+#### Specific Cell
+
+### Copying Selected Cells
+
+#### Copy Selected Cells Button
+
+#### Control-C
+
+## Incoporation
 
 ### 1. Define Data Source
 
@@ -40,12 +56,6 @@ render () {
   }
 }
 ```
-
-## Cell Selection
-
-### Row and Column Selectors
-
-## Copying Cells
 
 ## License
 
