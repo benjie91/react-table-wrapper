@@ -25,21 +25,23 @@ yarn start
 
 This step allows you to select which cells you want to copy from a ReactTable.
 
-Each row and column in the ReactTable has a state to track if it is selected or not. **A cell is only considered selected when both its row and column is selected.**
+Each row and column in the ReactTable has a state to track if it is selected or not. ==A cell is only considered selected when both its row and column is selected.==
 
 When it is selected, its background turns green. If it becomes unselected, its background returns to white.
 
 There are 2 ways to select cells:
 
-### Row and Column Selectors
+### 1. Checkbox Selectors
 
 Upon initialisation, all rows and columns are unselected.
 
-~~image of row + column + all row/column selectors~~
+![Checkbox Selectors](/documentationPics/IMG01.png)
 
-To toggle a row or column's state (selected / unselected), click on its Row or Column Selector, which lies in the same row or column respectively.
+To toggle a row or column's state (selected / unselected), click on its Row or Column Selector, which are highlighted in the blue and red box in the image above respectively.
 
-To toggle the state of all the rows in the ReactTable, click on the All Row Selector. When it is checked, all the rows will follow it and be checked as well. When it is unchecked, all the rows will uncheck as well. The same is true for the All Column Selector, just that it affects the table's columns instead of rows.
+To toggle the state of all the rows in the ReactTable, click on the All Row Selector, which is in the green box. When it is checked, all the rows will follow it and be checked as well. When it is unchecked, all the rows will uncheck as well.
+
+The same is true for the All Column Selector, which is in the purple box. The only difference is that it affects the table's columns instead of rows.
 
 ~~indeterminate~~
 
@@ -47,9 +49,9 @@ If an individual Row or Column Selector is clicked on, the All Row Selector or A
 
 If they are clicked while being indeterminate, they will turn unchecked and uncheck every row or column in the table.
 
-### Specific Cell
+### 2. Specific Cell
 
-Clicking on an individual cell will select or deselect it by altering the state of its row and column's states.
+Clicking on an individual cell will select or deselect it by altering the state of its row and column.
 
 If the cell is unselected, either its row, column or both are unselected. When it is clicked on, both its row and column are selected, thus selecting the cell.
 
@@ -61,13 +63,13 @@ Once you have selected which cells you want to copy, you can use either of the f
 
 ### Copy Selected Cells Button
 
-~~image~~
+~~copy button~~
 
-You can click on the Copy Selected Cells button above the ReactTable to copy the selected cells.
+You can click on the Copy Selected Cells button that appears above a ReactTable to copy its selected cells.
 
 ### Control-C
 
-You can also copy the selected cells by pressing <kbd>Control</kbd>+<kbd>C</kbd> on your keyboard for Windows or <kbd>Command</kbd>+<kbd>C</kbd> for Mac.
+You can also copy the selected cells by pressing <kbd>Control</kbd>+<kbd>C</kbd> for Windows or <kbd>Command</kbd>+<kbd>C</kbd> for Mac.
 
 If you are using multiple ReactTables on the same page, note that the cells will be copied from the last table that is clicked on.
 
@@ -75,7 +77,7 @@ Also, note that using this method while there is a cursor selection on the page 
 
 ## Pasting Cells
 
-~~image~~
+~~pasted output~~
 
 Once the cells are copied, they can be pasted into anything that is able to render a table, such as Microsoft Excel, Word or Outlook.
 
@@ -85,7 +87,7 @@ Once the cells are copied, they can be pasted into anything that is able to rend
 
 Create a JSON file to serve as the ReactTable's source of data. It must contain 2 arrays to store the information of the table's headers and rows.
 
-~~image~~
+~~example of header~~
 
 The header array should should contain JSON objects that each represent a column in the table.
 
@@ -93,7 +95,7 @@ The Header value will be the name of the header in the table. The accessor value
 
 The items in the header array should match the number and order of columns to be displayed in the ReactTable.
 
-~~image~~
+~~example of rowdata~~
 
 The rowData array should contain JSON objects that each represent a row in the table.
 
@@ -112,7 +114,7 @@ import React, { Component } from "react";
 import ReactTableCopyWrapper from "react-table-wrapper";
 ```
 
-You can also import ReactTable's default style. Otherwise it may not render like a table.
+You can also import ReactTable's default style. Otherwise, it may not render to look like a table.
 
 ```jsx
 import "react-table/react-table.css";
@@ -126,7 +128,7 @@ import data from "./anywhere/data.json";
 
 #### Add the Table
 
-You can add the wrapper to a React component with 4 props:
+You can add the wrapper to a React component using 4 props:
 
 1.  tableId (string): Used as an HTML ID on the page to identify the table. Ensure that it is unique in the page.
 2.  title (string): Used as the title that appears above at the top of the ReactTable.
