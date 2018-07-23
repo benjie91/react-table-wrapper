@@ -25,9 +25,11 @@ yarn start
 
 This step allows you to select which cells you want to copy from a ReactTable.
 
-Each row and column in the ReactTable has a state to track if it is selected or not. ==A cell is only considered selected when both its row and column is selected.==
+Each row and column in the ReactTable has a state to track if it is selected or not.
 
-When it is selected, its background turns green. If it becomes unselected, its background returns to white.
+**A cell is only considered selected when both its row and column is selected.** When it is selected, its background turns green. If it becomes unselected, its background returns to white.
+
+<span style="background-color: #FFFF00">Marked text</span>
 
 There are 2 ways to select cells:
 
@@ -37,7 +39,7 @@ Upon initialisation, all rows and columns are unselected.
 
 ![Checkbox Selectors](/documentationPics/checkboxSelector.PNG)
 
-To toggle a row or column's state (selected / unselected), click on its Row or Column Selector, which are highlighted in the blue and red box in the image above respectively.
+To toggle a row or column's state (selected/unselected), click on its Row or Column Selector, which are highlighted in the blue and red box in the image above respectively.
 
 To toggle the state of all the rows in the ReactTable, click on the All Row Selector, which is in the green box. When it is checked, all the rows will follow it and be checked as well. When it is unchecked, all the rows will uncheck as well.
 
