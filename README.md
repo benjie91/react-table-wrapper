@@ -43,7 +43,7 @@ To toggle the state of all the rows in the ReactTable, click on the All Row Sele
 
 The same is true for the All Column Selector, which is in the purple box. The only difference is that it affects the table's columns instead of rows.
 
-~~indeterminate~~
+![Indeterminate](/documentationPics/IMG02.png)
 
 If an individual Row or Column Selector is clicked on, the All Row Selector or All Column Selector will be indeterminate respectively. This state represents when neither all or none of the rows or columns are selected respectively.
 
@@ -63,7 +63,7 @@ Once you have selected which cells you want to copy, you can use either of the f
 
 ### Copy Selected Cells Button
 
-~~copy button~~
+![Copy Selected Cells Button](/documentationPics/IMG03.png)
 
 You can click on the Copy Selected Cells button that appears above a ReactTable to copy its selected cells.
 
@@ -77,7 +77,7 @@ Also, note that using this method while there is a cursor selection on the page 
 
 ## Pasting Cells
 
-~~pasted output~~
+![Pasted Output](/documentationPics/IMG04.png)
 
 Once the cells are copied, they can be pasted into anything that is able to render a table, such as Microsoft Excel, Word or Outlook.
 
