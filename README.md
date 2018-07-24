@@ -95,7 +95,26 @@ Once the cells are copied, they can be pasted into anything that is able to rend
 
 Create a JSON file to serve as the ReactTable's source of data. It must contain 2 arrays to store the information of the table's headers and rows.
 
-~~example of header~~
+```json
+"headers": [
+      {
+        "Header": "ID",
+        "accessor": "imdbID"
+      },
+      {
+        "Header": "Title",
+        "accessor": "title"
+      },
+      {
+        "Header": "Year",
+        "accessor": "year"
+      },
+      {
+        "Header": "Description",
+        "accessor": "description"
+      }
+    ],
+```
 
 The header array should should contain JSON objects that each represent a column in the table.
 
@@ -103,7 +122,28 @@ The Header value will be the name of the header in the table. The accessor value
 
 The items in the header array should match the number and order of columns to be displayed in the ReactTable.
 
-~~example of rowdata~~
+```json
+"rowData": [
+      {
+        "title": "Atlanta",
+        "year": "2008–2013",
+        "description": "Two cousins, with different views on art versus commerce, on their way up through the Atlanta rap scene; \"Earnest 'Earn' Marks,\" an ambitious college drop-out and his estranged cousin, who suddenly becomes a star.",
+        "imdbID": "tt4288182"
+    },
+    {
+        "title": "Billions",
+        "year": "2016–",
+        "description": "U.S. Attorney Chuck Rhoades goes after hedge fund king, Bobby \"Axe\" Axelrod in a battle between two powerful New York figures.",
+        "imdbID": "tt4270492"
+    },
+    {
+        "title": "Black Mirror",
+        "year": "2011–",
+        "description": "A television anthology series that shows the dark side of life and technology.",
+        "imdbID": "tt2085059"
+    }
+]
+```
 
 The rowData array should contain JSON objects that each represent a row in the table.
 
