@@ -1,10 +1,10 @@
-# ReactTableCopyWrapper
+<h1 align="center">ReactTableCopyWrapper</h1>
 
 > A wrapper that provide functionalities to select and copy cells from a ReactTable.
 
 [![NPM](https://img.shields.io/npm/v/react-table-wrapper.svg)](https://www.npmjs.com/package/react-table-wrapper) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg)](https://github.com/airbnb/javascript)
 
-## Run Demo
+<h2 align="center">Run Demo</h2>
 
 1.  Build the component by typing this in the terminal:
 
@@ -22,7 +22,7 @@ yarn start
 3.  The demo page will load up to `localhost:3000` by default.
     It will load 3 ReactTables with this wrapper attached onto it.
 
-## Selecting Cells
+<h2 align="center">Selecting Cells</h2>
 
 Each row and column in the ReactTable has a state to track if it is selected or not.
 
@@ -59,7 +59,7 @@ Clicking on them will toggle the state of every row or column in the table respe
 When they are checked, every row or column in the table is selected respectively.
 When they are unchcked, every row or column in the table is deselected respectively.
 
-<h5 align="center">Indeterminate State</h5>
+<h4 align="center">Indeterminate State</h4>
 
 <p align="center">
   <img src="/docPics/2.png">
@@ -89,7 +89,7 @@ This ensures that the selected cells always produce a table when copied and past
 
 **This method is best used for selecting a small number of cells**
 
-## Copying Selected Cells
+<h2 align="center">Copying Selected Cells</h2>
 
 Once you have selected which cells you want to copy, you can now copy them to your clipboard.
 
@@ -116,7 +116,7 @@ This method is not affected by which table was the last to be interacted with.
 
 **This method is best used when copying from one ReactTable after another**
 
-## Paste Output
+<h2 align="center">Paste Output</h2>
 
 <p align="center">
   <img src="/docPics/4.png">
@@ -124,7 +124,7 @@ This method is not affected by which table was the last to be interacted with.
 
 Once the cells are copied, they can be pasted into any application that is able to render a table, such as Microsoft Excel, Word or Outlook.
 
-## Incorporation
+<h2 align="center">Incorporation</h2>
 
 <h3 align="center">Define Data Source</h3>
 
@@ -254,6 +254,6 @@ render () {
 }
 ```
 
-## License
+<h2 align="center">License</h3>
 
 MIT © [](https://github.com/)
