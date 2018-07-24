@@ -33,11 +33,7 @@ There are 2 ways to select cells:
 
 ### 1. Checkbox Selectors
 
-#### Row & Column Selectors
-
-<p align="center">
-<h4>Row & Column Selectors</h4>
-</p>
+<h4 align="center">Row & Column Selectors</h4>
 
 <p align="center">
   <img src="/docPics/1.png">
