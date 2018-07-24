@@ -79,6 +79,10 @@ Also, note that using this method while there is a cursor selection on the page 
 
 ![Pasted Output](/documentationPics/4.png)
 
+<p align="center">
+  <img src="/documentationPics/4.png">
+</p>
+
 Once the cells are copied, they can be pasted into anything that is able to render a table, such as Microsoft Excel, Word or Outlook.
 
 ## Incoporation
