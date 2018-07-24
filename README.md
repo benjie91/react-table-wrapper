@@ -36,6 +36,10 @@ There are 2 ways to select cells:
 #### Row & Column Selectors
 
 <p align="center">
+<h4>Row & Column Selectors</h4>
+</p>
+
+<p align="center">
   <img src="/docPics/1.png">
 </p>
 
@@ -62,7 +66,7 @@ When they are unchcked, every row or column in the table is deselected respectiv
 ##### Indeterminate State
 
 <p align="center">
-  <img src="/documentationPics/2.png">
+  <img src="/docPics/2.png">
 </p>
 
 The All Row Selector and All Column Selector have a third state called "Indeterminate".
@@ -74,7 +78,7 @@ If they are clicked on while being indeterminate, they will become unchecked, ca
 
 **This method is best used for selecting a large number of cells**
 
-### 2. Specific Cell
+### 2. Specific Cell Selector
 
 Clicking on an individual cell will select or deselect it by altering the state of its row and column.
 
@@ -106,7 +110,7 @@ Note that if there is a cursor selection on the page, that selection will be cop
 ### 2. Copy Selected Cells Button
 
 <p align="center">
-  <img src="/documentationPics/3.png">
+  <img src="/docPics/3.png">
 </p>
 
 A Copy Selected Cells button is added at the top of each ReactTable.
@@ -119,7 +123,7 @@ This method is not affected by which table was the last to be interacted with.
 ## Pasting Cells
 
 <p align="center">
-  <img src="/documentationPics/4.png">
+  <img src="/docPics/4.png">
 </p>
 
 Once the cells are copied, they can be pasted into any application that is able to render a table, such as Microsoft Excel, Word or Outlook.
