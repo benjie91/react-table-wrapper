@@ -4,8 +4,6 @@
 
 [![NPM](https://img.shields.io/npm/v/react-table-wrapper.svg)](https://www.npmjs.com/package/react-table-wrapper) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg)](https://github.com/airbnb/javascript)
 
-<br>
-
 ## Run Demo
 
 1.  Build the component by typing this in the terminal:
@@ -21,16 +19,13 @@ cd example
 yarn start
 ```
 
-3.  The demo page will load up to `localhost:3000` by default.
-    It will load 3 ReactTables with this wrapper attached onto it.
-
-<br>
+3.  The demo page will load up to `localhost:3000` by default. It will load 3 ReactTables with this wrapper attached onto it.
 
 ## Selecting Cells
 
 Each row and column in the ReactTable has a state to track if it is selected or not.
 
-**A cell is only considered selected when both its row and column is selected.**
+> A cell is only considered selected when both its row and column is selected.
 
 When a cell is selected, its background turns green. If it becomes unselected, its background returns to white.
 
@@ -40,7 +35,7 @@ There are 2 ways to select cells:
 
 ### 1. Checkbox Selectors
 
-**This method is best used for selecting a large number of cells.**
+> This method is best used for selecting a large number of cells.
 
 <p align="center">
   <img src="/docPics/selectors.png">
@@ -88,7 +83,7 @@ As such, every row or column in the table will be deselected respectively.
 
 ### 2. Specific Cell Selector
 
-**This method is best used for selecting a small number of cells.**
+> This method is best used for selecting a small number of cells.
 
 Clicking on an individual cell will select or deselect it by altering the state of its row and column.
 
@@ -106,13 +101,13 @@ Note that it is possible for multiple cells to be selected or deselected at once
 
 Once you have selected which cells you want to copy, you can now copy them to your clipboard.
 
-<br>
-
 There are 2 ways to copy cells:
+
+<br>
 
 ### 1. Copy Shortcup Command
 
-**This method is best used when copying from a single ReactTable.**
+> This method is best used when copying from a single ReactTable.
 
 Pressing <kbd>Control</kbd>+<kbd>C</kbd> for Windows, or <kbd>Command</kbd>+<kbd>C</kbd> for Mac, will copy the selected cells of the last table to be interacted with.
 
@@ -122,7 +117,7 @@ Note: If there is a cursor selection on the page, that selection will be copied 
 
 ### 2. Copy Selected Cells Button
 
-**This method is best used when copying from one ReactTable after another.**
+> This method is best used when copying from one ReactTable after another.
 
 A "Copy Selected Cells" button is added at the top of each ReactTable.
 Clicking it will copy the selected cells in its table.
