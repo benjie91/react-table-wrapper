@@ -12,74 +12,109 @@
 yarn build
 ```
 
-2.  Run the example demo by typing this next:
+2.  Run the example demo page by typing this next:
 
 ```
 cd example
 yarn start
 ```
 
-3.  The demo page will load up to `localhost:3000` by default. You can now play around with the demo. It will load 3 ReactTables with this wrapper attached onto it.
+3.  The demo page will load up to `localhost:3000` by default.
+    It will load 3 ReactTables with this wrapper attached onto it.
 
 ## Selecting Cells
 
-This step allows you to select which cells you want to copy from a ReactTable.
-
 Each row and column in the ReactTable has a state to track if it is selected or not.
 
-**A cell is only considered selected when both its row and column is selected.** When it is selected, its background turns green. If it becomes unselected, its background returns to white.
+**A cell is only considered selected when both its row and column is selected.**
+When it is selected, its background turns green. If it becomes unselected, its background returns to white.
 
 There are 2 ways to select cells:
 
 ### 1. Checkbox Selectors
 
-Upon initialisation, all rows and columns are unselected.
+#### Row & Column Selectors
 
 <p align="center">
-  <img src="/documentationPics/1.png">
+  <img src="/docPics/1.png">
 </p>
 
-To toggle a row or column's state (selected/unselected), click on its Row or Column Selector, which are highlighted in the blue and red box in the image above respectively.
+Upon initialisation, all checkbox selectors in the table are unchecked.
 
-To toggle the state of all the rows in the ReactTable, click on the All Row Selector, which is in the green box. When it is checked, all the rows will follow it and be checked as well. When it is unchecked, all the rows will uncheck as well.
+The Row Selectors and Column Selectors are found in the blue and red boxes respectively.
+They represent the state (selected/unselected) of the row or column they lie in.
 
-The same is true for the All Column Selector, which is in the purple box. The only difference is that it affects the table's columns instead of rows.
+When the row or column's Selector is checked, it is selected.
+Otherwise, when its Selector is unchecked, it is unselected.
+
+Clicking on a Row or Column Selector will toggle that row or column's state.
+
+#### The All Row Selector & All Column Selector
+
+The All Row Selector and All Column Selector can be found in the green and purple boxes respectively.
+They represent whether every row or column in the table is selected respectively.
+
+Clicking on them will toggle the state of every row or column in the table respectively.
+
+When they are checked, every row or column in the table is selected respectively.
+When they are unchcked, every row or column in the table is deselected respectively.
+
+##### Indeterminate State
 
 <p align="center">
   <img src="/documentationPics/2.png">
 </p>
 
-If an individual Row or Column Selector is clicked on, the All Row Selector or All Column Selector will be indeterminate respectively. This state represents when neither all or none of the rows or columns are selected respectively.
+The All Row Selector and All Column Selector have a third state called "Indeterminate".
+This state represents that neither all or none of the rows or columns in the table are selected respectively.
 
-If they are clicked while being indeterminate, they will turn unchecked and uncheck every row or column in the table.
+They will land in this state when an individual Row or Column Selector is clicked on respectively.
+
+If they are clicked on while being indeterminate, they will become unchecked, causing every row or column in table to be deselected respectively.
+
+**This method is best used for selecting a large number of cells**
 
 ### 2. Specific Cell
 
 Clicking on an individual cell will select or deselect it by altering the state of its row and column.
 
-If the cell is unselected, either its row, column or both are unselected. When it is clicked on, both its row and column are selected, thus selecting the cell.
+If the cell is unselected, either its row, column or both are unselected.
+When it is clicked on, both its row and column will become selected, thus selecting the cell.
 
-If the cell is already selected, both its row and column are selected. When it is clicked on, both its row and column are unselected, thus deselecting the cell.
+If the cell is already selected, both its row and column are selected.
+When it is clicked on, both its row and column will be deselected, thus deselecting the cell.
+
+Note that it is possible for multiple cells to be selected or deselected at once with this method. This is because the state of the clicked cell's row and column is affected, thus potentially affecting other cells in the same column or row.
+This ensures that the selected cells always produce a table when copied and pasted.
+
+**This method is best used for selecting a small number of cells**
 
 ## Copying Selected Cells
 
-Once you have selected which cells you want to copy, you can use either of the following methods to copy the selected cells and their headers to your clipboard. Note that only the cells that are displayed will be copied.
+Once you have selected which cells you want to copy, you can now copy them to your clipboard.
 
-### Copy Selected Cells Button
+There are 2 ways to copy cells:
+
+### 1. Copy Shortcup Command
+
+Pressing <kbd>Control</kbd>+<kbd>C</kbd> for Windows, or <kbd>Command</kbd>+<kbd>C</kbd> for Mac, will copy the selected cells of the last table to be interacted with.
+
+Note that if there is a cursor selection on the page, that selection will be copied instead.
+
+**This method is best used when copying from a single ReactTable**
+
+### 2. Copy Selected Cells Button
 
 <p align="center">
   <img src="/documentationPics/3.png">
 </p>
 
-You can click on the Copy Selected Cells button that appears above a ReactTable to copy its selected cells.
+A Copy Selected Cells button is added at the top of each ReactTable.
+Clicking it will copy the selected cells in its table.
 
-### Control-C
+This method is not affected by which table was the last to be interacted with.
 
-You can also copy the selected cells by pressing <kbd>Control</kbd>+<kbd>C</kbd> for Windows or <kbd>Command</kbd>+<kbd>C</kbd> for Mac.
-
-If you are using multiple ReactTables on the same page, note that the cells will be copied from the last table that is clicked on.
-
-Also, note that using this method while there is a cursor selection on the page will copy the selected text instead of the table cells.
+**This method is best used when copying from one ReactTable after another**
 
 ## Pasting Cells
 
@@ -87,7 +122,7 @@ Also, note that using this method while there is a cursor selection on the page 
   <img src="/documentationPics/4.png">
 </p>
 
-Once the cells are copied, they can be pasted into anything that is able to render a table, such as Microsoft Excel, Word or Outlook.
+Once the cells are copied, they can be pasted into any application that is able to render a table, such as Microsoft Excel, Word or Outlook.
 
 ## Incoporation
 
@@ -120,20 +155,20 @@ The header array should should contain JSON objects that each represent a column
 
 The Header value will be the name of the header in the table. The accessor value will be the key to determine which part of a row's information will be placed under that header.
 
-The items in the header array should match the number and order of columns to be displayed in the ReactTable.
+The items in the header array should match the number and order of columns to be displayed in the ReactTable. For example with the above header array, the table's order of columns will be ID, Title, Year, then Description.
 
 ```json
 "rowData": [
       {
         "title": "Atlanta",
         "year": "2008–2013",
-        "description": "Two cousins, with different views on art versus commerce, on their way up through the Atlanta rap scene; \"Earnest 'Earn' Marks,\" an ambitious college drop-out and his estranged cousin, who suddenly becomes a star.",
+        "description": "Two cousins, with different views on art versus commerce, on their way up through the Atlanta...",
         "imdbID": "tt4288182"
     },
     {
         "title": "Billions",
         "year": "2016–",
-        "description": "U.S. Attorney Chuck Rhoades goes after hedge fund king, Bobby \"Axe\" Axelrod in a battle between two powerful New York figures.",
+        "description": "U.S. Attorney Chuck Rhoades goes after hedge fund king, Bobby \"Axe\" Axelrod in a battle...",
         "imdbID": "tt4270492"
     },
     {
