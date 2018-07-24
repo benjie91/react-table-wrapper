@@ -30,8 +30,9 @@ yarn start
 
 Each row and column in the ReactTable has a state to track if it is selected or not.
 
-**A cell is only considered selected when both its row and column is selected.** <br>
-When it is selected, its background turns green. If it becomes unselected, its background returns to white.
+**A cell is only considered selected when both its row and column is selected.**
+
+When a cell is selected, its background turns green. If it becomes unselected, its background returns to white.
 
 There are 2 ways to select cells:
 
@@ -39,13 +40,11 @@ There are 2 ways to select cells:
 
 ### 1. Checkbox Selectors
 
-This method is best used for selecting a large number of cells.
+**This method is best used for selecting a large number of cells.**
+
+<img src="/docPics/selectors.png">
 
 #### Row & Column Selectors
-
-<p align="center">
-  <img src="/docPics/selectors.png">
-</p>
 
 Upon initialisation, all checkbox selectors in the table are unchecked.
 
@@ -69,11 +68,9 @@ Clicking on them will toggle the state of every row or column in the table respe
 When they are checked, every row or column in the table is selected respectively.
 When they are unchcked, every row or column in the table is deselected respectively.
 
-##### Indeterminate State
+<img src="/docPics/indeterminate.png">
 
-<p align="center">
-  <img src="/docPics/indeterminate.png">
-</p>
+##### Indeterminate State
 
 The All Row Selector and All Column Selector have a third state called "Indeterminate".
 This state represents that neither all or none of the rows or columns in the table are selected respectively.
@@ -121,11 +118,11 @@ Note that if there is a cursor selection on the page, that selection will be cop
 
 ### 2. Copy Selected Cells Button
 
-**This method is best used when copying from one ReactTable after another.**
-
 <p align="center">
   <img src="/docPics/button.png">
 </p>
+
+**This method is best used when copying from one ReactTable after another.**
 
 A Copy Selected Cells button is added at the top of each ReactTable.
 Clicking it will copy the selected cells in its table.
@@ -136,11 +133,11 @@ This method is not affected by which table was the last to be interacted with.
 
 ## Paste Output
 
+Once the cells are copied, they can be pasted into any application that is able to render a table, such as Microsoft Excel, Word or Outlook.
+
 <p align="center">
   <img src="/docPics/paste.png">
 </p>
-
-Once the cells are copied, they can be pasted into any application that is able to render a table, such as Microsoft Excel, Word or Outlook.
 
 <br>
 
