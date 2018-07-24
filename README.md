@@ -143,9 +143,7 @@ Its style is not dependent on that of the ReactTable.
 
 <img src="/docPics/paste.png">
 
-By default, the pasted output will be a table with black text and borders and bolded headers.
-
-<br>
+By default, the pasted output will be a table with black text and borders and bolded headers. <br>
 
 ### Custom Style
 
@@ -155,6 +153,8 @@ In the demo, Table 3 shows an example of how a custom style could be applied ont
 If cells copied from Table 3 are pasted, the pasted table will have a pink border applied onto it.
 
 To see how a custom style is implemented, refer to the "Add the Table" segment in the "Incorporation" section below.
+
+<br>
 
 ## Incorporation
 
