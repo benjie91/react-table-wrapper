@@ -34,9 +34,9 @@ Each row and column in the ReactTable has a state to track if it is selected or 
 
 When a cell is selected, its background turns green. If it becomes unselected, its background returns to white.
 
-There are 2 ways to select cells:
-
 <br>
+
+There are 2 ways to select cells:
 
 ### 1. Checkbox Selectors
 
@@ -48,11 +48,9 @@ There are 2 ways to select cells:
 
 Upon initialisation, all checkbox selectors in the table are unchecked.
 
-The Row Selectors and Column Selectors are found in the blue and red boxes respectively.
-They represent the state (selected/unselected) of the row or column they lie in.
+The Row Selectors and Column Selectors are found in the blue and red boxes respectively. <br> They represent the state (selected/unselected) of the row or column they lie in.
 
-When the row or column's Selector is checked, it is selected.
-Otherwise, when its Selector is unchecked, it is unselected.
+When the row or column's Selector is checked, it is selected. <br> Otherwise, when its Selector is unchecked, it is unselected.
 
 Clicking on a Row or Column Selector will toggle that row or column's state.
 
@@ -103,8 +101,6 @@ This ensures that the selected cells always produce a table when copied and past
 Once you have selected which cells you want to copy, you can now copy them to your clipboard.
 
 There are 2 ways to copy cells:
-
-<br>
 
 ### 1. Copy Shortcup Command
 
