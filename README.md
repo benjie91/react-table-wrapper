@@ -39,12 +39,12 @@ There are 2 ways to select cells:
 
 ### 1. Checkbox Selectors
 
-<p><u>This method is best used for selecting a large number of cells.</u></p>
+This method is best used for selecting a large number of cells.
 
 #### Row & Column Selectors
 
 <p align="center">
-  <img src="/docPics/1.png">
+  <img src="/docPics/selectors.png">
 </p>
 
 Upon initialisation, all checkbox selectors in the table are unchecked.
@@ -72,7 +72,7 @@ When they are unchcked, every row or column in the table is deselected respectiv
 ##### Indeterminate State
 
 <p align="center">
-  <img src="/docPics/2.png">
+  <img src="/docPics/indeterminate.png">
 </p>
 
 The All Row Selector and All Column Selector have a third state called "Indeterminate".
@@ -124,7 +124,7 @@ Note that if there is a cursor selection on the page, that selection will be cop
 **This method is best used when copying from one ReactTable after another.**
 
 <p align="center">
-  <img src="/docPics/3.png">
+  <img src="/docPics/button.png">
 </p>
 
 A Copy Selected Cells button is added at the top of each ReactTable.
@@ -137,7 +137,7 @@ This method is not affected by which table was the last to be interacted with.
 ## Paste Output
 
 <p align="center">
-  <img src="/docPics/4.png">
+  <img src="/docPics/paste.png">
 </p>
 
 Once the cells are copied, they can be pasted into any application that is able to render a table, such as Microsoft Excel, Word or Outlook.
