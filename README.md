@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-table-wrapper.svg)](https://www.npmjs.com/package/react-table-wrapper) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg)](https://github.com/airbnb/javascript)
 
+<br>
+
 <h2 align="center">Run Demo</h2>
 
 1.  Build the component by typing this in the terminal:
@@ -22,6 +24,8 @@ yarn start
 3.  The demo page will load up to `localhost:3000` by default.
     It will load 3 ReactTables with this wrapper attached onto it.
 
+<br><br>
+
 <h2 align="center">Selecting Cells</h2>
 
 Each row and column in the ReactTable has a state to track if it is selected or not.
@@ -30,6 +34,8 @@ Each row and column in the ReactTable has a state to track if it is selected or 
 When it is selected, its background turns green. If it becomes unselected, its background returns to white.
 
 There are 2 ways to select cells:
+
+<br><br><br>
 
 <h3 align="center">1. Checkbox Selectors</h3>
 
@@ -49,6 +55,8 @@ Otherwise, when its Selector is unchecked, it is unselected.
 
 Clicking on a Row or Column Selector will toggle that row or column's state.
 
+<br>
+
 <h4 align="center">The All Row Selector & All Column Selector</h4>
 
 The All Row Selector and All Column Selector can be found in the green and purple boxes respectively.
@@ -59,7 +67,9 @@ Clicking on them will toggle the state of every row or column in the table respe
 When they are checked, every row or column in the table is selected respectively.
 When they are unchcked, every row or column in the table is deselected respectively.
 
-<h4 align="center">Indeterminate State</h4>
+<br>
+
+<h5 align="center">Indeterminate State</h5>
 
 <p align="center">
   <img src="/docPics/2.png">
@@ -73,6 +83,8 @@ They will land in this state when an individual Row or Column Selector is clicke
 If they are clicked on while being indeterminate, they will become unchecked, causing every row or column in table to be deselected respectively.
 
 **This method is best used for selecting a large number of cells**
+
+<br><br><br>
 
 <h3 align="center">2. Specific Cell Selector</h3>
 
@@ -89,11 +101,15 @@ This ensures that the selected cells always produce a table when copied and past
 
 **This method is best used for selecting a small number of cells**
 
+<br><br>
+
 <h2 align="center">Copying Selected Cells</h2>
 
 Once you have selected which cells you want to copy, you can now copy them to your clipboard.
 
 There are 2 ways to copy cells:
+
+<br><br><br>
 
 <h3 align="center">1. Copy Shortcup Command</h3>
 
@@ -102,6 +118,8 @@ Pressing <kbd>Control</kbd>+<kbd>C</kbd> for Windows, or <kbd>Command</kbd>+<kbd
 Note that if there is a cursor selection on the page, that selection will be copied instead.
 
 **This method is best used when copying from a single ReactTable**
+
+<br><br><br>
 
 <h3 align="center">2. Copy Selected Cells Button</h3>
 
@@ -116,6 +134,8 @@ This method is not affected by which table was the last to be interacted with.
 
 **This method is best used when copying from one ReactTable after another**
 
+<br><br>
+
 <h2 align="center">Paste Output</h2>
 
 <p align="center">
@@ -123,6 +143,8 @@ This method is not affected by which table was the last to be interacted with.
 </p>
 
 Once the cells are copied, they can be pasted into any application that is able to render a table, such as Microsoft Excel, Word or Outlook.
+
+<br><br>
 
 <h2 align="center">Incorporation</h2>
 
@@ -184,6 +206,8 @@ The rowData array should contain JSON objects that each represent a row in the t
 
 The table determines what information is placed under each column by matching each key to the a header's accessor value.
 
+<br><br><br>
+
 <h3 align="center">Add Table to Page</h3>
 
 Once a ReactTable's data source has been created, it can be added to a page with this wrapper attached onto it.
@@ -208,6 +232,8 @@ Next, import the ReactTable's data source.
 ```jsx
 import data from "./anywhere/data.json";
 ```
+
+<br><br>
 
 <h4 align="center">Add the Table</h4>
 
@@ -253,6 +279,8 @@ render () {
   }
 }
 ```
+
+<br><br>
 
 <h2 align="center">License</h3>
 
