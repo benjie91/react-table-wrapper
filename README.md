@@ -85,6 +85,8 @@ As such, every row or column in the table will be deselected respectively.
 
 > This method is best used for selecting a small number of cells.
 
+<br>
+
 Clicking on an individual cell will select or deselect it by altering the state of its row and column.
 
 If the cell is unselected, either its row, column or both are unselected. <br>
@@ -109,13 +111,19 @@ There are 2 ways to copy cells:
 
 > This method is best used when copying from a single ReactTable.
 
+<br>
+
 Pressing <kbd>Control</kbd>+<kbd>C</kbd> for Windows, or <kbd>Command</kbd>+<kbd>C</kbd> for Mac, will copy the selected cells of the last table to be interacted with.
 
 Note: If there is a cursor selection on the page, that selection will be copied instead.
 
+<br>
+
 ### 2. Copy Selected Cells Button
 
 > This method is best used when copying from one ReactTable after another.
+
+<br>
 
 A "Copy Selected Cells" button is added at the top of each ReactTable.
 Clicking it will copy the selected cells in its table.
@@ -133,9 +141,7 @@ Its style is not dependent on that of the ReactTable.
 
 ### Default Style
 
-<p align="center">
-  <img src="/docPics/paste.png">
-</p>
+<img src="/docPics/paste.png">
 
 By default, the pasted output will be a table with black text and borders and bolded headers.
 
@@ -143,9 +149,7 @@ By default, the pasted output will be a table with black text and borders and bo
 
 ### Custom Style
 
-<p align="center">
-  <img src="/docPics/customPaste.png">
-</p>
+<img src="/docPics/customPaste.png">
 
 In the demo, Table 3 shows an example of how a custom style could be applied onto a ReactTable's pasted output. <br>
 If cells copied from Table 3 are pasted, the pasted table will have a pink border applied onto it.
