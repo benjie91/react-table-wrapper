@@ -1,10 +1,10 @@
-<h1 align="center">ReactTableCopyWrapper</h1>
+# ReactTableCopyWrapper
 
 > A wrapper that provide functionalities to select and copy cells from a ReactTable.
 
 [![NPM](https://img.shields.io/npm/v/react-table-wrapper.svg)](https://www.npmjs.com/package/react-table-wrapper) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg)](https://github.com/airbnb/javascript)
 
-<h2 align="center">Run Demo</h2>
+## Run Demo
 
 1.  Build the component by typing this in the terminal:
 
@@ -24,7 +24,7 @@ yarn start
 
 <br>
 
-<h2 align="center">Selecting Cells</h2>
+## Selecting Cells
 
 Each row and column in the ReactTable has a state to track if it is selected or not.
 
@@ -35,11 +35,11 @@ There are 2 ways to select cells:
 
 <br>
 
-<h3 align="center">1. Checkbox Selectors</h3>
+### 1. Checkbox Selectors
 
 **This method is best used for selecting a large number of cells.**
 
-<h4 align="center">Row & Column Selectors</h4>
+#### Row & Column Selectors
 
 <p align="center">
   <img src="/docPics/1.png">
@@ -57,7 +57,7 @@ Clicking on a Row or Column Selector will toggle that row or column's state.
 
 <br>
 
-<h4 align="center">The All Row Selector & All Column Selector</h4>
+#### The All Row Selector & All Column Selector
 
 The All Row Selector and All Column Selector can be found in the green and purple boxes respectively.
 They represent whether every row or column in the table is selected respectively.
@@ -67,7 +67,7 @@ Clicking on them will toggle the state of every row or column in the table respe
 When they are checked, every row or column in the table is selected respectively.
 When they are unchcked, every row or column in the table is deselected respectively.
 
-<h5 align="center">Indeterminate State</h5>
+##### Indeterminate State
 
 <p align="center">
   <img src="/docPics/2.png">
@@ -82,7 +82,7 @@ If they are clicked on while being indeterminate, they will become unchecked, ca
 
 <br>
 
-<h3 align="center">2. Specific Cell Selector</h3>
+### 2. Specific Cell Selector
 
 **This method is best used for selecting a small number of cells.**
 
@@ -99,7 +99,7 @@ This ensures that the selected cells always produce a table when copied and past
 
 <br>
 
-<h2 align="center">Copying Selected Cells</h2>
+## Copying Selected Cells
 
 Once you have selected which cells you want to copy, you can now copy them to your clipboard.
 
@@ -107,7 +107,7 @@ There are 2 ways to copy cells:
 
 <br>
 
-<h3 align="center">1. Copy Shortcup Command</h3>
+### 1. Copy Shortcup Command
 
 **This method is best used when copying from a single ReactTable.**
 
@@ -117,7 +117,7 @@ Note that if there is a cursor selection on the page, that selection will be cop
 
 <br>
 
-<h3 align="center">2. Copy Selected Cells Button</h3>
+### 2. Copy Selected Cells Button
 
 **This method is best used when copying from one ReactTable after another.**
 
@@ -132,7 +132,7 @@ This method is not affected by which table was the last to be interacted with.
 
 <br>
 
-<h2 align="center">Paste Output</h2>
+## Paste Output
 
 <p align="center">
   <img src="/docPics/4.png">
@@ -142,9 +142,9 @@ Once the cells are copied, they can be pasted into any application that is able 
 
 <br>
 
-<h2 align="center">Incorporation</h2>
+## Incorporation
 
-<h3 align="center">Define Data Source</h3>
+### Define Data Source
 
 Create a JSON file to serve as the ReactTable's source of data. It must contain 2 arrays to store the information of the table's headers and rows.
 
@@ -204,11 +204,11 @@ The table determines what information is placed under each column by matching ea
 
 <br>
 
-<h3 align="center">Add Table to Page</h3>
+### Add Table to Page
 
 Once a ReactTable's data source has been created, it can be added to a page with this wrapper attached onto it.
 
-<h4 align="center">Import the Component</h4>
+#### Import the Component
 
 The first step is to import React and the wrapper to your React component.
 
@@ -231,7 +231,7 @@ import data from "./anywhere/data.json";
 
 <br>
 
-<h4 align="center">Add the Table</h4>
+#### Add the Table
 
 You can add the wrapper to a React component using 4 props:
 
@@ -278,6 +278,6 @@ render () {
 
 <br>
 
-<h2 align="center">License</h3>
+## License
 
 MIT © [](https://github.com/)
