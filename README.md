@@ -25,7 +25,7 @@ yarn start
 
 Each row and column in the ReactTable has a state to track if it is selected or not.
 
-> A cell is only considered selected when both its row and column is selected.
+**A cell is only considered selected when both its row and column is selected.**
 
 When a cell is selected, its background turns green. If it becomes unselected, its background returns to white.
 
@@ -37,9 +37,9 @@ There are 2 ways to select cells:
 
 > This method is best used for selecting a large number of cells.
 
-<p align="center">
-  <img src="/docPics/selectors.png">
-</p>
+<br>
+
+<img src="/docPics/selectors.png">
 
 #### Row & Column Selectors
 
@@ -65,9 +65,9 @@ Clicking on them will toggle the state of every row or column in the table respe
 When they are checked, every row or column in the table is selected respectively. <br>
 When they are unchcked, every row or column in the table is deselected respectively.
 
-<p align="center">
-  <img src="/docPics/indeterminate.png">
-</p>
+<br>
+
+<img src="/docPics/indeterminate.png">
 
 ##### Indeterminate State
 
@@ -113,8 +113,6 @@ Pressing <kbd>Control</kbd>+<kbd>C</kbd> for Windows, or <kbd>Command</kbd>+<kbd
 
 Note: If there is a cursor selection on the page, that selection will be copied instead.
 
-<br>
-
 ### 2. Copy Selected Cells Button
 
 > This method is best used when copying from one ReactTable after another.
@@ -126,15 +124,33 @@ Note: This method is not affected by which table was the last to be interacted w
 
 <br>
 
-## Paste Output
+## Pasting Cells
 
 Once the cells are copied, they can be pasted into any application that is able to render a table, such as Microsoft Excel, Word or Outlook.
+
+The pasted output will be a table with only the selected cells and their headers. <br>
+Its style is not dependent on that of the ReactTable.
+
+### Default Style
 
 <p align="center">
   <img src="/docPics/paste.png">
 </p>
 
+By default, the pasted output will be a table with black text and borders and bolded headers.
+
 <br>
+
+### Custom Style
+
+<p align="center">
+  <img src="/docPics/customPaste.png">
+</p>
+
+In the demo, Table 3 shows an example of how a custom style could be applied onto a ReactTable's pasted output. <br>
+If cells copied from Table 3 are pasted, the pasted table will have a pink border applied onto it.
+
+To see how a custom style is implemented, refer to the "Add the Table" segment in the "Incorporation" section below.
 
 ## Incorporation
 
