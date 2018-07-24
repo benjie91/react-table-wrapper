@@ -42,15 +42,19 @@ There are 2 ways to select cells:
 
 **This method is best used for selecting a large number of cells.**
 
-<img src="/docPics/selectors.png">
+<p align="center">
+  <img src="/docPics/selectors.png">
+</p>
 
 #### Row & Column Selectors
 
 Upon initialisation, all checkbox selectors in the table are unchecked.
 
-The Row Selectors and Column Selectors are found in the blue and red boxes respectively. <br> They represent the state (selected/unselected) of the row or column they lie in.
+The Row Selectors and Column Selectors are found in the blue and red boxes respectively. <br>
+They represent the state (selected/unselected) of the row or column they lie in.
 
-When the row or column's Selector is checked, it is selected. <br> Otherwise, when its Selector is unchecked, it is unselected.
+When the row or column's Selector is checked, it is selected. <br>
+Otherwise, when its Selector is unchecked, it is unselected.
 
 Clicking on a Row or Column Selector will toggle that row or column's state.
 
@@ -58,19 +62,21 @@ Clicking on a Row or Column Selector will toggle that row or column's state.
 
 #### The All Row Selector & All Column Selector
 
-The All Row Selector and All Column Selector can be found in the green and purple boxes respectively.
+The All Row Selector and All Column Selector can be found in the green and purple boxes respectively. <br>
 They represent whether every row or column in the table is selected respectively.
 
 Clicking on them will toggle the state of every row or column in the table respectively.
 
-When they are checked, every row or column in the table is selected respectively.
+When they are checked, every row or column in the table is selected respectively. <br>
 When they are unchcked, every row or column in the table is deselected respectively.
 
-<img src="/docPics/indeterminate.png">
+<p align="center">
+  <img src="/docPics/indeterminate.png">
+</p>
 
 ##### Indeterminate State
 
-The All Row Selector and All Column Selector have a third state called "Indeterminate".
+The All Row Selector and All Column Selector have a third state called "Indeterminate". <br>
 This state represents that neither all or none of the rows or columns in the table are selected respectively.
 
 They will land in this state when an individual Row or Column Selector is clicked on respectively.
@@ -85,14 +91,15 @@ If they are clicked on while being indeterminate, they will become unchecked, ca
 
 Clicking on an individual cell will select or deselect it by altering the state of its row and column.
 
-If the cell is unselected, either its row, column or both are unselected.
+If the cell is unselected, either its row, column or both are unselected. <br>
 When it is clicked on, both its row and column will become selected, thus selecting the cell.
 
-If the cell is already selected, both its row and column are selected.
+If the cell is already selected, both its row and column are selected. <br>
 When it is clicked on, both its row and column will be deselected, thus deselecting the cell.
 
-Note that it is possible for multiple cells to be selected or deselected at once with this method. This is because the state of the clicked cell's row and column is affected, thus potentially affecting other cells in the same column or row.
-This ensures that the selected cells always produce a table when copied and pasted.
+Note that it is possible for multiple cells to be selected or deselected at once with this method. <br>
+This is because the clicked cell's row and column states are affected, potentially affecting other cells in <br>
+the same column or row. This ensures that the selected cells always produce a table when copied and pasted.
 
 <br>
 
@@ -100,11 +107,15 @@ This ensures that the selected cells always produce a table when copied and past
 
 Once you have selected which cells you want to copy, you can now copy them to your clipboard.
 
+<br>
+
 There are 2 ways to copy cells:
 
 ### 1. Copy Shortcup Command
 
 **This method is best used when copying from a single ReactTable.**
+
+<br>
 
 Pressing <kbd>Control</kbd>+<kbd>C</kbd> for Windows, or <kbd>Command</kbd>+<kbd>C</kbd> for Mac, will copy the selected cells of the last table to be interacted with.
 
@@ -119,6 +130,8 @@ Note that if there is a cursor selection on the page, that selection will be cop
 </p>
 
 **This method is best used when copying from one ReactTable after another.**
+
+<br>
 
 A Copy Selected Cells button is added at the top of each ReactTable.
 Clicking it will copy the selected cells in its table.
@@ -270,8 +283,6 @@ render () {
   }
 }
 ```
-
-<br>
 
 ## License
 
