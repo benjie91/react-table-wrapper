@@ -31,7 +31,7 @@ When it is selected, its background turns green. If it becomes unselected, its b
 
 There are 2 ways to select cells:
 
-### 1. Checkbox Selectors
+<h3 align="center">1. Checkbox Selectors</h3>
 
 <h4 align="center">Row & Column Selectors</h4>
 
@@ -49,7 +49,7 @@ Otherwise, when its Selector is unchecked, it is unselected.
 
 Clicking on a Row or Column Selector will toggle that row or column's state.
 
-#### The All Row Selector & All Column Selector
+<h4 align="center">The All Row Selector & All Column Selector</h4>
 
 The All Row Selector and All Column Selector can be found in the green and purple boxes respectively.
 They represent whether every row or column in the table is selected respectively.
@@ -59,7 +59,7 @@ Clicking on them will toggle the state of every row or column in the table respe
 When they are checked, every row or column in the table is selected respectively.
 When they are unchcked, every row or column in the table is deselected respectively.
 
-##### Indeterminate State
+<h5 align="center">Indeterminate State</h5>
 
 <p align="center">
   <img src="/docPics/2.png">
@@ -74,7 +74,7 @@ If they are clicked on while being indeterminate, they will become unchecked, ca
 
 **This method is best used for selecting a large number of cells**
 
-### 2. Specific Cell Selector
+<h3 align="center">2. Specific Cell Selector</h3>
 
 Clicking on an individual cell will select or deselect it by altering the state of its row and column.
 
@@ -95,7 +95,7 @@ Once you have selected which cells you want to copy, you can now copy them to yo
 
 There are 2 ways to copy cells:
 
-### 1. Copy Shortcup Command
+<h3 align="center">1. Copy Shortcup Command</h3>
 
 Pressing <kbd>Control</kbd>+<kbd>C</kbd> for Windows, or <kbd>Command</kbd>+<kbd>C</kbd> for Mac, will copy the selected cells of the last table to be interacted with.
 
@@ -103,7 +103,7 @@ Note that if there is a cursor selection on the page, that selection will be cop
 
 **This method is best used when copying from a single ReactTable**
 
-### 2. Copy Selected Cells Button
+<h3 align="center">2. Copy Selected Cells Button</h3>
 
 <p align="center">
   <img src="/docPics/3.png">
@@ -116,7 +116,7 @@ This method is not affected by which table was the last to be interacted with.
 
 **This method is best used when copying from one ReactTable after another**
 
-## Pasting Cells
+## Paste Output
 
 <p align="center">
   <img src="/docPics/4.png">
@@ -124,9 +124,9 @@ This method is not affected by which table was the last to be interacted with.
 
 Once the cells are copied, they can be pasted into any application that is able to render a table, such as Microsoft Excel, Word or Outlook.
 
-## Incoporation
+## Incorporation
 
-### Define Data Source
+<h3 align="center">Define Data Source</h3>
 
 Create a JSON file to serve as the ReactTable's source of data. It must contain 2 arrays to store the information of the table's headers and rows.
 
@@ -184,11 +184,11 @@ The rowData array should contain JSON objects that each represent a row in the t
 
 The table determines what information is placed under each column by matching each key to the a header's accessor value.
 
-### Add Table to Page
+<h3 align="center">Add Table to Page</h3>
 
 Once a ReactTable's data source has been created, it can be added to a page with this wrapper attached onto it.
 
-#### Import the Component
+<h4 align="center">Import the Component</h4>
 
 The first step is to import React and the wrapper to your React component.
 
@@ -209,7 +209,7 @@ Next, import the ReactTable's data source.
 import data from "./anywhere/data.json";
 ```
 
-#### Add the Table
+<h4 align="center">Add the Table</h4>
 
 You can add the wrapper to a React component using 4 props:
 
