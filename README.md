@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-table-wrapper.svg)](https://www.npmjs.com/package/react-table-wrapper) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg)](https://github.com/airbnb/javascript)
 
+<br>
+
 ## Run Demo
 
 1.  Build the component by typing this in the terminal:
@@ -28,7 +30,7 @@ yarn start
 
 Each row and column in the ReactTable has a state to track if it is selected or not.
 
-**A cell is only considered selected when both its row and column is selected.**
+**A cell is only considered selected when both its row and column is selected.** <br>
 When it is selected, its background turns green. If it becomes unselected, its background returns to white.
 
 There are 2 ways to select cells:
@@ -37,7 +39,7 @@ There are 2 ways to select cells:
 
 ### 1. Checkbox Selectors
 
-**This method is best used for selecting a large number of cells.**
+<p><u>This method is best used for selecting a large number of cells.</u></p>
 
 #### Row & Column Selectors
 
