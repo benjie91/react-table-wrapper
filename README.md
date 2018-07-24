@@ -81,7 +81,8 @@ This state represents that neither all or none of the rows or columns in the tab
 
 They will land in this state when an individual Row or Column Selector is clicked on respectively.
 
-If they are clicked on while being indeterminate, they will become unchecked, causing every row or column in table to be deselected respectively.
+If they are clicked on while being indeterminate, they will become unchecked. <br>
+As such, every row or column in the table will be deselected respectively.
 
 <br>
 
@@ -97,9 +98,7 @@ When it is clicked on, both its row and column will become selected, thus select
 If the cell is already selected, both its row and column are selected. <br>
 When it is clicked on, both its row and column will be deselected, thus deselecting the cell.
 
-Note that it is possible for multiple cells to be selected or deselected at once with this method. <br>
-This is because the clicked cell's row and column states are affected, potentially affecting other cells in <br>
-the same column or row. This ensures that the selected cells always produce a table when copied and pasted.
+Note that it is possible for multiple cells to be selected or deselected at once with this method. This is because the clicked cell's row and column states are affected, potentially affecting other cells in the same column or row. This ensures that the selected cells always produce a table when copied and pasted.
 
 <br>
 
@@ -115,28 +114,20 @@ There are 2 ways to copy cells:
 
 **This method is best used when copying from a single ReactTable.**
 
-<br>
-
 Pressing <kbd>Control</kbd>+<kbd>C</kbd> for Windows, or <kbd>Command</kbd>+<kbd>C</kbd> for Mac, will copy the selected cells of the last table to be interacted with.
 
-Note that if there is a cursor selection on the page, that selection will be copied instead.
+Note: If there is a cursor selection on the page, that selection will be copied instead.
 
 <br>
 
 ### 2. Copy Selected Cells Button
 
-<p align="center">
-  <img src="/docPics/button.png">
-</p>
-
 **This method is best used when copying from one ReactTable after another.**
 
-<br>
-
-A Copy Selected Cells button is added at the top of each ReactTable.
+A "Copy Selected Cells" button is added at the top of each ReactTable.
 Clicking it will copy the selected cells in its table.
 
-This method is not affected by which table was the last to be interacted with.
+Note: This method is not affected by which table was the last to be interacted with.
 
 <br>
 
