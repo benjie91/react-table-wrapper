@@ -29,15 +29,13 @@ Each row and column in the ReactTable has a state to track if it is selected or 
 
 **A cell is only considered selected when both its row and column is selected.** When it is selected, its background turns green. If it becomes unselected, its background returns to white.
 
-<span style="background-color: #FFFF00">Marked text</span>
-
 There are 2 ways to select cells:
 
 ### 1. Checkbox Selectors
 
 Upon initialisation, all rows and columns are unselected.
 
-![Checkbox Selectors](/documentationPics/checkboxSelector.PNG)
+![Checkbox Selectors](/documentationPics/1.png)
 
 To toggle a row or column's state (selected/unselected), click on its Row or Column Selector, which are highlighted in the blue and red box in the image above respectively.
 
