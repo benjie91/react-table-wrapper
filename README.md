@@ -107,7 +107,7 @@ There are 2 ways to copy cells:
 
 <br>
 
-### 1. Copy Shortcup Command
+### 1. Copy Shortcut Command
 
 > This method is best used when copying from a single ReactTable.
 
@@ -231,7 +231,7 @@ import React, { Component } from "react";
 import ReactTableCopyWrapper from "react-table-wrapper";
 ```
 
-You can also import ReactTable's default style. Otherwise, it may not render to look like a table.
+You should also import ReactTable's default table style. Otherwise, the ReactTable may not render to look like a table.
 
 ```jsx
 import "react-table/react-table.css";
