@@ -2,7 +2,7 @@
 
 [![NPM](https://img.shields.io/npm/v/react-table-wrapper.svg)](https://www.npmjs.com/package/react-table-wrapper) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg)](https://github.com/airbnb/javascript)
 
-> A wrapper that provide functionalities to select and copy cells from a ReactTable.
+> A wrapper that provides functionalities to select and copy cells from ReactTables.
 
 ## Run Demo
 
@@ -19,7 +19,7 @@ cd example
 yarn start
 ```
 
-3.  The demo page will load up to `localhost:3000` by default. It will load 3 ReactTables with this wrapper attached onto it.
+3.  The demo page will load up to `localhost:3000` by default. It will load 3 ReactTables which have this wrapper attached to it.
 
 ## Selecting Cells
 
@@ -63,7 +63,7 @@ They represent whether every row or column in the table is selected respectively
 Clicking on them will toggle the state of every row or column in the table respectively.
 
 When they are checked, every row or column in the table is selected respectively. <br>
-When they are unchcked, every row or column in the table is deselected respectively.
+When they are unchecked, every row or column in the table is deselected respectively.
 
 <br>
 
@@ -149,7 +149,7 @@ By default, the pasted output will be a table with black text and borders and bo
 
 <img src="/docPics/customPaste.png">
 
-In the demo, Table 3 shows an example of how a custom style could be applied onto a ReactTable's pasted output. <br>
+In the demo, Table 3 shows an example of how a custom style could be applied to a ReactTable's pasted output. <br>
 If cells copied from Table 3 are pasted, the pasted table will have a pink border applied onto it.
 
 To see how a custom style is implemented, refer to the "Add the Table" segment in the "Incorporation" section below.
@@ -183,7 +183,7 @@ Create a JSON file to serve as the ReactTable's source of data. It must contain 
     ],
 ```
 
-The header array should should contain JSON objects that each represent a column in the table.
+The header array should contain JSON objects that each represent a column in the table.
 
 The Header value will be the name of the header in the table. The accessor value will be the key to determine which part of a row's information will be placed under that header.
 
@@ -214,13 +214,13 @@ The items in the header array should match the number and order of columns to be
 
 The rowData array should contain JSON objects that each represent a row in the table.
 
-The table determines what information is placed under each column by matching each key to the a header's accessor value.
+The table determines what information is placed under each column by matching each key to a header's accessor value.
 
 <br>
 
 ### Add Table to Page
 
-Once a ReactTable's data source has been created, it can be added to a page with this wrapper attached onto it.
+Once a ReactTable's data source has been created, it can be created with this wrapper attached to it and added to a page.
 
 #### Import the Component
 
@@ -249,7 +249,7 @@ import data from "./anywhere/data.json";
 
 You can add the wrapper to a React component using 4 props:
 
-1.  tableId (string): Used as an HTML ID on the page to identify the table. Ensure that it is unique in the page.
+1.  tableId (string): Used as an HTML ID on the page to identify the table. Ensure that it is unique on the page.
 2.  title (string): Used as the title that appears above at the top of the ReactTable.
 3.  headers (array): Used to create the table headers.
 4.  data (array): Used to create the table rows.
@@ -272,7 +272,7 @@ render () {
 
 You can also add an optional prop:
 
-5.  pasteStyle (string): HTML style tag. Used to define custom style for pasted table.
+5.  pasteStyle (string): HTML style tag. Used to define a custom style for the pasted table output.
 
 ```jsx
 render () {
@@ -286,7 +286,6 @@ render () {
           table, td, th {border: 3px solid pink;}</style>"
       />
     )
-  }
 }
 ```
 
