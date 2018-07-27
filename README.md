@@ -40,8 +40,6 @@ There are 2 ways to select cells:
 
 <br>
 
-<img src="/docPics/selectors.png">
-
 ![Selectors](https://raw.githubusercontent.com/benjie91/react-table-wrapper/master/docPics/selectors.png)
 
 #### Row & Column Selectors
@@ -70,7 +68,7 @@ When they are unchecked, every row or column in the table is deselected respecti
 
 <br>
 
-<img src="/docPics/indeterminate.png">
+![Indeterminate State](https://raw.githubusercontent.com/benjie91/react-table-wrapper/master/docPics/indeterminate.png)
 
 ##### Indeterminate State
 
@@ -144,13 +142,13 @@ Its style is not dependent on that of the ReactTable.
 
 ### Default Style
 
-<img src="/docPics/paste.png">
+![Default Paste Style](https://raw.githubusercontent.com/benjie91/react-table-wrapper/master/docPics/paste.png)
 
 By default, the pasted output will be a table with black text and borders and bolded headers. <br>
 
 ### Custom Style
 
-<img src="/docPics/customPaste.png">
+![Custom Paste Style](https://raw.githubusercontent.com/benjie91/react-table-wrapper/master/docPics/customPaste.png)
 
 In the demo, Table 3 shows an example of how a custom style could be applied to a ReactTable's pasted output. <br>
 If cells copied from Table 3 are pasted, the pasted table will have a pink border applied onto it.
