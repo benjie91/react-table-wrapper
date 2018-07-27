@@ -7,6 +7,8 @@
 
 ## Run Demo
 
+To run the demo, you need to download a copy of this project. In your local copy of the project, complete the following:
+
 1.  Build the component by typing this in the terminal:
 
 ```
@@ -158,6 +160,14 @@ To see how a custom style is implemented, refer to the "Add the Table" segment i
 <br>
 
 ## Incorporation
+
+### Installing Component to Projects
+
+Run the following in your project terminal.
+
+```
+npm install react-table-copy-wrapper
+```
 
 ### Define Data Source
 
