@@ -1,8 +1,8 @@
 # ReactTableCopyWrapper
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-orange.svg)](https://github.com/benjie91/react-table-wrapper)
-[![NPM](https://img.shields.io/badge/npm-v1.0.3-blue.svg)](https://www.npmjs.com/package/react-table-copy-wrapper)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg)](https://github.com/airbnb/javascript)
+[![NPM](https://img.shields.io/badge/npm-v1.0.3-blue.svg)](https://www.npmjs.com/package/react-table-copy-wrapper)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-orange.svg)](https://github.com/benjie91/react-table-wrapper)
 
 > A wrapper that provides functionalities to select and copy cells from ReactTables.
 
