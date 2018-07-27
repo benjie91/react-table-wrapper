@@ -4,7 +4,7 @@
 [![GitHub Repository](https://img.shields.io/badge/github-repo-orange.svg)](https://github.com/benjie91/react-table-wrapper)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg)](https://github.com/airbnb/javascript)
 
-> A wrapper that provides functionalities to select and copy cells from ReactTables.
+> A wrapper that provides functionalities to select and copy cells from [ReactTables](https://react-table.js.org/).
 
 ## Run Demo
 
