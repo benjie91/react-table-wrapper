@@ -173,8 +173,6 @@ class ReactTableCopyWrapper extends Component {
   }
 
   render() {
-    const {} = this.props;
-
     return (
       <div id={this.props.tableId} align="center">
         <h2>{this.props.title}</h2>
@@ -184,20 +182,6 @@ class ReactTableCopyWrapper extends Component {
         <ReactTable
           data={this.props.data}
           columns={this.getColumns()}
-          defaultPageSize={10}
-          pageSizeOptions={[
-            10,
-            50,
-            100,
-            500,
-            1000,
-            2500,
-            5000,
-            10000,
-            15000,
-            20000
-          ]}
-          className="-stiped -highlight"
           getTdProps={(state, rowInfo, column) => {
             const rowIndex = rowInfo.index;
             const columnIndex = this.findColumnIndex(column.Header);
@@ -231,6 +215,7 @@ class ReactTableCopyWrapper extends Component {
               }
             };
           }}
+          {...this.props}
         />
       </div>
     );
@@ -250,30 +235,3 @@ ReactTableCopyWrapper.defaultProps = {
 };
 
 export default ReactTableCopyWrapper;
-
-/*
----
-name: ReactTableWrapper
-menu: Components
----
-
-import {Playground} from 'docz'
-import ReactTableWrapper from './index'
-
-import React, { Component } from "react";
-import "react-table/react-table.css";
-import data from "./data/data.json";
-
-# ReactTableWrapper
-
-## Basic Usage
-
-<Playground>
-<ReactTableWrapper
-          tableId="Table1"
-          title="Table 1"
-          headers={data.headers}
-          data={data.rowData}
-        />
-</Playground>
- */

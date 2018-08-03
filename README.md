@@ -10,7 +10,7 @@
 
 To run the demo, you need to download a copy of this project from [this GitHub repository](https://github.com/benjie91/react-table-wrapper). In your local copy of the project, complete the following:
 
-1.  Build the component by typing this in the terminal:
+1.  Build the component by typing this in the propject terminal:
 
 ```
 yarn build
